@@ -1,0 +1,47 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="menuprincipal.master.cs" Inherits="proyectogimnasio.menuprincipal" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <link href="css/Estilomenu.css" rel="stylesheet" />
+    <link href="css/GRIDESTILO.css" rel="stylesheet" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <div class="navbar">
+  <a href="#INICIO.ASPX">Inicio</a>
+  <div class="subnav">
+    <button class="subnavbtn">Catalogo <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="#company">Usuarios</a>
+      <a href="CLIENTES.ASPX">Clientes</a>
+      <a href="PRODUCTOS.ASPX">Productos</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Direcciones <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="CANTON.ASPX">Canton</a>
+      <a href="DISTRITO.ASPX">Distrito</a>
+      <a href="PROVINCIA.ASPX">Provincia</a>
+    </div>
+  </div> 
+
+   <a href="Factura.aspx">Facturacion</a>
+  <a href="#contact">Ayuda</a>
+
+</div>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
