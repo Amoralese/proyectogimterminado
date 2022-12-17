@@ -45,7 +45,7 @@ namespace proyectogimnasio
                 String s = System.Configuration.ConfigurationManager.ConnectionStrings["PROYECTOGIMNASIOConnectionString"].ConnectionString;
                 SqlConnection conexion = new SqlConnection(s);
                 conexion.Open();
-                SqlCommand comando = new SqlCommand(" INSERT INTO canton VALUES('" + TNombreCanton.Text + "', '" + TCodigoCanton.Text + "'  )", conexion);
+                SqlCommand comando = new SqlCommand(" INSERT INTO canton VALUES('" + TNombreCanton.Text + "', '" + TCodigoprovincia.Text + "'  )", conexion);
                 comando.ExecuteNonQuery();
                 conexion.Close();
                 LlenarGrid();
@@ -56,7 +56,7 @@ namespace proyectogimnasio
             String s = System.Configuration.ConfigurationManager.ConnectionStrings["PROYECTOGIMNASIOConnectionString"].ConnectionString;
             SqlConnection conexion = new SqlConnection(s);
             conexion.Open();
-            SqlCommand comando = new SqlCommand("DELETE canton where CODIGO CANTON = '" + TCodigoCanton.Text + "'", conexion);
+            SqlCommand comando = new SqlCommand("DELETE canton where CODIGO = '" + TCodigocanton.Text+ "'", conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
             LlenarGrid();
@@ -67,7 +67,7 @@ namespace proyectogimnasio
             String s = System.Configuration.ConfigurationManager.ConnectionStrings["PROYECTOGIMNASIOConnectionString"].ConnectionString;
             SqlConnection conexion = new SqlConnection(s);
             conexion.Open();
-            SqlCommand comando = new SqlCommand("update CANTON where NOMBRE CANTON  = '" + TNombreCanton.Text + "'", conexion);
+            SqlCommand comando = new SqlCommand("update CANTON set nombre = '" + TNombreCanton.Text + "', CODIGO_PROVINCIA = '" + TCodigoprovincia.Text + "' WHERE CODIGO = '" + TCodigocanton.Text +"'", conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
             LlenarGrid();

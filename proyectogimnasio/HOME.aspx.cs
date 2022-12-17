@@ -28,7 +28,7 @@ namespace proyectogimnasio
             SqlDataReader registro = comando.ExecuteReader();
             if (registro.Read())
             {
-                Response.Redirect("MENU.aspx");
+                Response.Redirect("inicio.aspx");
             }
             else
             {

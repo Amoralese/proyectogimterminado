@@ -57,7 +57,7 @@ namespace proyectogimnasio
             String s = System.Configuration.ConfigurationManager.ConnectionStrings["PROYECTOGIMNASIOConnectionString"].ConnectionString;
             SqlConnection conexion = new SqlConnection(s);
             conexion.Open();
-            SqlCommand comando = new SqlCommand("DELETE PRODUCTO where NOMBRE producto  = '" + TNOMBREP.Text + "'", conexion);
+            SqlCommand comando = new SqlCommand("DELETE PRODUCTO where codigo  = '" + TCodigoproducto.Text + "'", conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
             LlenarGrid();
@@ -68,7 +68,7 @@ namespace proyectogimnasio
             String s = System.Configuration.ConfigurationManager.ConnectionStrings["PROYECTOGIMNASIOConnectionString"].ConnectionString;
             SqlConnection conexion = new SqlConnection(s);
             conexion.Open();
-            SqlCommand comando = new SqlCommand("update PRODUCTO where NOMBRE  = '" + TNOMBREP.Text + "'", conexion);
+            SqlCommand comando = new SqlCommand("update PRODUCTO set NOMBRE  = '" + TNOMBREP.Text + "', precio = '" + TPRECIOP.Text + "' WHERE CODIGO = '" + TCodigoproducto.Text + "'  ", conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
             LlenarGrid();

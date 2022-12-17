@@ -24,12 +24,12 @@
     <asp:TextBox ID="TNOMBREP" runat="server"></asp:TextBox>
 &nbsp;&nbsp;&nbsp; PRECIO:&nbsp;
     <asp:TextBox ID="TPRECIOP" runat="server"></asp:TextBox>
+    &nbsp;&nbsp; CODIGO PRODUCTO:
+    <asp:TextBox ID="TCodigoproducto" runat="server"></asp:TextBox>
     <br />
     <asp:Button ID="BINGRESARP" runat="server" Height="32px" OnClick="BINGRESARP_Click" Text="INGRESAR" Width="92px" />
 &nbsp;&nbsp;
     <asp:Button ID="BBORRARP" runat="server" Height="31px" OnClick="BBORRARP_Click" Text="BORRAR" Width="84px" />
-&nbsp;&nbsp;
-    <asp:Button ID="BMODIFICARP" runat="server" Height="32px" Text="MODIFICAR" Width="107px" />
 &nbsp;&nbsp;&nbsp;
     <asp:Button ID="BACTUALIZARP" runat="server" Height="31px" OnClick="BACTUALIZARP_Click" Text="ACTUALIZAR" Width="115px" />
     <br />

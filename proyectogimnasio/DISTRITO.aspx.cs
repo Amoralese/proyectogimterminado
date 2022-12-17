@@ -46,7 +46,7 @@ namespace proyectogimnasio
             String s = System.Configuration.ConfigurationManager.ConnectionStrings["PROYECTOGIMNASIOConnectionString"].ConnectionString;
             SqlConnection conexion = new SqlConnection(s);
             conexion.Open();
-            SqlCommand comando = new SqlCommand(" INSERT INTO DISTRITO VALUES('" + TNombredistrito.Text + "', '" + TCodigodistrito.Text + "'  )", conexion);
+            SqlCommand comando = new SqlCommand(" INSERT INTO DISTRITO VALUES('" + TNombredistrito.Text + "', '" + TCodigoCANTON.Text + "'  )", conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
             LlenarGrid();
@@ -57,7 +57,7 @@ namespace proyectogimnasio
             String s = System.Configuration.ConfigurationManager.ConnectionStrings["PROYECTOGIMNASIOConnectionString"].ConnectionString;
             SqlConnection conexion = new SqlConnection(s);
             conexion.Open();
-            SqlCommand comando = new SqlCommand("DELETE canton where CODIGO DISTRITO = '" + TCodigodistrito.Text + "'", conexion);
+            SqlCommand comando = new SqlCommand("DELETE DISTRITO where CODIGO = '" + TcodigoDistrito.Text + "'", conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
             LlenarGrid();
@@ -68,10 +68,11 @@ namespace proyectogimnasio
             String s = System.Configuration.ConfigurationManager.ConnectionStrings["PROYECTOGIMNASIOConnectionString"].ConnectionString;
             SqlConnection conexion = new SqlConnection(s);
             conexion.Open();
-            SqlCommand comando = new SqlCommand("update DISTRITO where NOMBRE CANTON  = '" + TNombredistrito.Text + "'", conexion);
+            SqlCommand comando = new SqlCommand("update DISTRITO set NOMBRE = '" + TNombredistrito.Text + "', CODIGO_CANTON = '" + TCodigoCANTON.Text + "' where codigo = '" + TcodigoDistrito.Text + "' ", conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
             LlenarGrid();
         }
+
     }
 }

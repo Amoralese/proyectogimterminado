@@ -14,16 +14,17 @@
     <br />
     NOMBRE DISTRITO:&nbsp;
     <asp:TextBox ID="TNombredistrito" runat="server"></asp:TextBox>
-&nbsp;&nbsp;&nbsp; CODIGO DISTRITO:&nbsp;
-    <asp:TextBox ID="TCodigodistrito" runat="server"></asp:TextBox>
+&nbsp;&nbsp;&nbsp; CODIGO CANTON:&nbsp;
+    <asp:TextBox ID="TCodigoCANTON" runat="server"></asp:TextBox>
+    &nbsp;&nbsp; CODIGO DISTRITO:
+    <asp:TextBox ID="TcodigoDistrito" runat="server"></asp:TextBox>
     <br />
     <br />
     <asp:Button ID="BAgregardistrito" runat="server" OnClick="BAgregardistrito_Click" Text="AGREGAR" />
 &nbsp;&nbsp;
     <asp:Button ID="BBorrardistrito" runat="server" OnClick="BBorrardistrito_Click" Text="BORRAR" />
 &nbsp;&nbsp;
-    <asp:Button ID="BModificardistrito" runat="server" OnClick="BModificardistrito_Click" Text="MODIFICAR" />
-&nbsp;&nbsp;
+    &nbsp;&nbsp;
     <asp:Button ID="BActualizardistrito" runat="server" OnClick="BActualizardistrito_Click" Text="ACTUALIZAR" />
     <br />
     <br />

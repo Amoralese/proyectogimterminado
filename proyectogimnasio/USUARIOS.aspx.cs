@@ -1,17 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Configuration;
-using System.Data;
 using System.Data.SqlClient;
+using System.Data;
 using System.Linq;
-using System.Runtime.InteropServices;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
 namespace proyectogimnasio
 {
-    public partial class Clientes : System.Web.UI.Page
+    public partial class USUARIOS : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -20,12 +19,13 @@ namespace proyectogimnasio
                 LlenarGrid();
             }
         }
+
         protected void LlenarGrid()
         {
             string constr = ConfigurationManager.ConnectionStrings["PROYECTOGIMNASIOConnectionString"].ConnectionString;
             using (SqlConnection con = new SqlConnection(constr))
             {
-                using (SqlCommand cmd = new SqlCommand("SELECT *  FROM CLIENTES"))
+                using (SqlCommand cmd = new SqlCommand("SELECT *  FROM USUARIOS"))
                 {
                     using (SqlDataAdapter sda = new SqlDataAdapter())
                     {
@@ -42,38 +42,39 @@ namespace proyectogimnasio
             }
         }
 
-        protected void Button1_Click(object sender, EventArgs e)
+        protected void Bagregarusuario_Click(object sender, EventArgs e)
         {
             String s = System.Configuration.ConfigurationManager.ConnectionStrings["PROYECTOGIMNASIOConnectionString"].ConnectionString;
             SqlConnection conexion = new SqlConnection(s);
             conexion.Open();
-            SqlCommand comando = new SqlCommand(" INSERT INTO CLIENTES VALUES('" + TNombre.Text + "', '" + TApellido.Text + "', '" + TTelefono.Text + "', " + TUsuario.Text + "  )", conexion);
+            SqlCommand comando = new SqlCommand(" INSERT INTO USUARIOS VALUES('" + TCorreo.Text+ "', '" + TClave.Text + "', '" + TNombre.Text + "' )", conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
             LlenarGrid();
+            TCorreo.Text = "";
+            TClave.Text = "";
             TNombre.Text = "";
-            TApellido.Text = "";
-            TUsuario.Text = "";
-            TTelefono.Text = "";
+
         }
 
-        protected void BBorrar_Click(object sender, EventArgs e)
+        protected void BBorrarusuario_Click(object sender, EventArgs e)
         {
             String s = System.Configuration.ConfigurationManager.ConnectionStrings["PROYECTOGIMNASIOConnectionString"].ConnectionString;
             SqlConnection conexion = new SqlConnection(s);
             conexion.Open();
-            SqlCommand comando = new SqlCommand("DELETE CLIENTES where codigo = '" + TCodigoclientes.Text + "'", conexion);
+            SqlCommand comando = new SqlCommand("DELETE usuarios where codigo = '" + TCodigousuario.Text + "'", conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
             LlenarGrid();
+
         }
 
-        protected void BActualizar_Click(object sender, EventArgs e)
+        protected void BActualizarusuario_Click(object sender, EventArgs e)
         {
             String s = System.Configuration.ConfigurationManager.ConnectionStrings["PROYECTOGIMNASIOConnectionString"].ConnectionString;
             SqlConnection conexion = new SqlConnection(s);
             conexion.Open();
-            SqlCommand comando = new SqlCommand("UPDATE  CLIENTES SET NOMBRE = '" + TNombre.Text+ "', APELLIDO = '" + TApellido.Text + "', TELEFONO = '" + TTelefono.Text + "' WHERE CODIGO = '"+TCodigoclientes.Text+"'  ", conexion);
+            SqlCommand comando = new SqlCommand("UPDATE USUARIOS SET CORREO = '" + TCorreo.Text + "', CLAVE = '" + TClave.Text + "', NOMBRE = '" + TNombre.Text + "' WHERE CODIGO = '" + TCodigousuario.Text + "'  ", conexion);
             comando.ExecuteNonQuery();
             conexion.Close();
             LlenarGrid();

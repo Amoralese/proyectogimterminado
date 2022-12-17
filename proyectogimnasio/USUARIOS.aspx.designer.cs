@@ -11,7 +11,7 @@ namespace proyectogimnasio
 {
 
 
-    public partial class PRODUCTOS
+    public partial class USUARIOS
     {
 
         /// <summary>
@@ -24,66 +24,75 @@ namespace proyectogimnasio
         protected global::System.Web.UI.WebControls.Image Image1;
 
         /// <summary>
-        /// Control datagrid.
+        /// Control GridView1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView datagrid;
+        protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
-        /// Control TNOMBREP.
+        /// Control TCorreo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TNOMBREP;
+        protected global::System.Web.UI.WebControls.TextBox TCorreo;
 
         /// <summary>
-        /// Control TPRECIOP.
+        /// Control TClave.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TPRECIOP;
+        protected global::System.Web.UI.WebControls.TextBox TClave;
 
         /// <summary>
-        /// Control TCodigoproducto.
+        /// Control TNombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TCodigoproducto;
+        protected global::System.Web.UI.WebControls.TextBox TNombre;
 
         /// <summary>
-        /// Control BINGRESARP.
+        /// Control TCodigousuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BINGRESARP;
+        protected global::System.Web.UI.WebControls.TextBox TCodigousuario;
 
         /// <summary>
-        /// Control BBORRARP.
+        /// Control Bagregarusuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BBORRARP;
+        protected global::System.Web.UI.WebControls.Button Bagregarusuario;
 
         /// <summary>
-        /// Control BACTUALIZARP.
+        /// Control BBorrarusuario.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BACTUALIZARP;
+        protected global::System.Web.UI.WebControls.Button BBorrarusuario;
+
+        /// <summary>
+        /// Control BActualizarusuario.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BActualizarusuario;
     }
 }

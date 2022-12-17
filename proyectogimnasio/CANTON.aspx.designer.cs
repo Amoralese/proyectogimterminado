@@ -42,13 +42,22 @@ namespace proyectogimnasio
         protected global::System.Web.UI.WebControls.TextBox TNombreCanton;
 
         /// <summary>
-        /// Control TCodigoCanton.
+        /// Control TCodigoprovincia.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TCodigoCanton;
+        protected global::System.Web.UI.WebControls.TextBox TCodigoprovincia;
+
+        /// <summary>
+        /// Control TCodigocanton.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TCodigocanton;
 
         /// <summary>
         /// Control BIngresarcanton.
@@ -67,15 +76,6 @@ namespace proyectogimnasio
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BBorrarcanton;
-
-        /// <summary>
-        /// Control BModificarcanton.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BModificarcanton;
 
         /// <summary>
         /// Control BActualizarcanton.

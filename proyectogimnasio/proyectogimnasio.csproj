@@ -77,11 +77,14 @@
     <Content Include="css\bootstrap\mixins\_visibility.css" />
     <Content Include="css\bootstrap\utilities\_stretched-link.css" />
     <Content Include="css\bootstrap\_media.css" />
+    <Content Include="css\boton.css" />
     <Content Include="css\Estilomenu.css" />
     <Content Include="css\GRIDESTILO.css" />
+    <Content Include="css\gridview.css" />
+    <Content Include="css\miestilo.css" />
     <Content Include="css\style.css" />
     <Content Include="DISTRITO.aspx" />
-    <Content Include="Factura.aspx" />
+    <Content Include="facturacion.aspx" />
     <Content Include="HOME.aspx" />
     <Content Include="images\bg.jpg" />
     <Content Include="images\CANTON.jpg" />
@@ -90,6 +93,7 @@
     <Content Include="images\INICIO.jpg" />
     <Content Include="images\PRODUCTOS.jpg" />
     <Content Include="images\PROVINCIAS.jpg" />
+    <Content Include="images\USUARIOS.jpg" />
     <Content Include="index.html" />
     <Content Include="INICIO.aspx" />
     <Content Include="js\bootstrap.min.js" />
@@ -100,6 +104,7 @@
     <Content Include="MENU.aspx" />
     <Content Include="PRODUCTOS.aspx" />
     <Content Include="PROVINCIA.aspx" />
+    <Content Include="USUARIOS.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -117,6 +122,9 @@
     <Compile Include="Clientes.aspx.designer.cs">
       <DependentUpon>Clientes.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ClsCliente.cs" />
+    <Compile Include="ClsFacturacion.cs" />
+    <Compile Include="ClsProducto.cs" />
     <Compile Include="ClsUsuario.cs" />
     <Compile Include="DISTRITO.aspx.cs">
       <DependentUpon>DISTRITO.aspx</DependentUpon>
@@ -125,12 +133,12 @@
     <Compile Include="DISTRITO.aspx.designer.cs">
       <DependentUpon>DISTRITO.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Factura.aspx.cs">
-      <DependentUpon>Factura.aspx</DependentUpon>
+    <Compile Include="facturacion.aspx.cs">
+      <DependentUpon>facturacion.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Factura.aspx.designer.cs">
-      <DependentUpon>Factura.aspx</DependentUpon>
+    <Compile Include="facturacion.aspx.designer.cs">
+      <DependentUpon>facturacion.aspx</DependentUpon>
     </Compile>
     <Compile Include="HOME.aspx.cs">
       <DependentUpon>HOME.aspx</DependentUpon>
@@ -174,6 +182,13 @@
     </Compile>
     <Compile Include="PROVINCIA.aspx.designer.cs">
       <DependentUpon>PROVINCIA.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="USUARIOS.aspx.cs">
+      <DependentUpon>USUARIOS.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="USUARIOS.aspx.designer.cs">
+      <DependentUpon>USUARIOS.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

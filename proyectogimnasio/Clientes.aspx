@@ -19,7 +19,8 @@
     <br />
     NUMERO USUARIO:&nbsp;
     <asp:TextBox ID="TUsuario" runat="server"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;&nbsp;&nbsp; CODIGO CLIENTES:
+<asp:TextBox ID="TCodigoclientes" runat="server"></asp:TextBox>
     <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <br />
@@ -29,7 +30,7 @@
 &nbsp;
     <asp:GridView ID="GridView1" runat="server">
     </asp:GridView>
-&nbsp;
+    <br />
     <br />
     <br />
 &nbsp;
@@ -37,8 +38,7 @@
 &nbsp;&nbsp;&nbsp;&nbsp;
     <asp:Button ID="BBorrar" runat="server" Height="44px" OnClick="BBorrar_Click" Text="BORRAR" Width="73px" />
 &nbsp;&nbsp;&nbsp;
-    <asp:Button ID="BModificar" runat="server" Height="44px" Text="MODIFICAR" Width="104px" />
-&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;
     <asp:Button ID="BActualizar" runat="server" Height="48px" OnClick="BActualizar_Click" Text="ACTUALIZAR" Width="99px" />
 &nbsp;&nbsp;&nbsp;&nbsp;
     <br />

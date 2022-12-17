@@ -42,13 +42,22 @@ namespace proyectogimnasio
         protected global::System.Web.UI.WebControls.TextBox TNombredistrito;
 
         /// <summary>
-        /// Control TCodigodistrito.
+        /// Control TCodigoCANTON.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TCodigodistrito;
+        protected global::System.Web.UI.WebControls.TextBox TCodigoCANTON;
+
+        /// <summary>
+        /// Control TcodigoDistrito.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TcodigoDistrito;
 
         /// <summary>
         /// Control BAgregardistrito.
@@ -67,15 +76,6 @@ namespace proyectogimnasio
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BBorrardistrito;
-
-        /// <summary>
-        /// Control BModificardistrito.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BModificardistrito;
 
         /// <summary>
         /// Control BActualizardistrito.

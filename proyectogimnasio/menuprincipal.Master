@@ -20,7 +20,7 @@
   <div class="subnav">
     <button class="subnavbtn">Catalogo <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="#company">Usuarios</a>
+      <a href="USUARIOS.ASPX">Usuarios</a>
       <a href="CLIENTES.ASPX">Clientes</a>
       <a href="PRODUCTOS.ASPX">Productos</a>
     </div>
@@ -34,7 +34,7 @@
     </div>
   </div> 
 
-   <a href="Factura.aspx">Facturacion</a>
+   <a href="FACTURACION.aspx">Facturacion</a>
   <a href="#contact">Ayuda</a>
 
 </div>

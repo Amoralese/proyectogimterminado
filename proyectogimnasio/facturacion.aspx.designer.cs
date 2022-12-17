@@ -7,66 +7,102 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace proyectogimnasio
+namespace FACTURACIONUTC
 {
 
 
-    public partial class Clientes
+    public partial class facturacion
     {
 
         /// <summary>
-        /// Control TNombre.
+        /// Control form1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TNombre;
+        protected global::System.Web.UI.HtmlControls.HtmlForm form1;
 
         /// <summary>
-        /// Control TApellido.
+        /// Control tcodigo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TApellido;
+        protected global::System.Web.UI.WebControls.TextBox tcodigo;
 
         /// <summary>
-        /// Control TTelefono.
+        /// Control tnombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TTelefono;
+        protected global::System.Web.UI.WebControls.TextBox tnombre;
 
         /// <summary>
-        /// Control TUsuario.
+        /// Control tcantidad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TUsuario;
+        protected global::System.Web.UI.WebControls.TextBox tcantidad;
 
         /// <summary>
-        /// Control TCodigoclientes.
+        /// Control tprecio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TCodigoclientes;
+        protected global::System.Web.UI.WebControls.TextBox tprecio;
 
         /// <summary>
-        /// Control Image1.
+        /// Control tcodigocliente.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Image Image1;
+        protected global::System.Web.UI.WebControls.TextBox tcodigocliente;
+
+        /// <summary>
+        /// Control tnombrecliente.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tnombrecliente;
+
+        /// <summary>
+        /// Control tfecha.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox tfecha;
+
+        /// <summary>
+        /// Control TextBox4.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+
+        /// <summary>
+        /// Control Button1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Button1;
 
         /// <summary>
         /// Control GridView1.
@@ -78,30 +114,39 @@ namespace proyectogimnasio
         protected global::System.Web.UI.WebControls.GridView GridView1;
 
         /// <summary>
-        /// Control BIngresar.
+        /// Control LSB.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BIngresar;
+        protected global::System.Web.UI.WebControls.Label LSB;
 
         /// <summary>
-        /// Control BBorrar.
+        /// Control LIVA.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BBorrar;
+        protected global::System.Web.UI.WebControls.Label LIVA;
 
         /// <summary>
-        /// Control BActualizar.
+        /// Control LTOTAL.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BActualizar;
+        protected global::System.Web.UI.WebControls.Label LTOTAL;
+
+        /// <summary>
+        /// Control Bfacturar.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Bfacturar;
     }
 }

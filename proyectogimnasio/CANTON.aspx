@@ -11,16 +11,18 @@
     </asp:GridView>
     <br />
     NOMBRE CANTON:<asp:TextBox ID="TNombreCanton" runat="server"></asp:TextBox>
-&nbsp;&nbsp; CODIGO CANTON:
-    <asp:TextBox ID="TCodigoCanton" runat="server"></asp:TextBox>
+    &nbsp;&nbsp; CODIGO PROVINCIA:
+    <asp:TextBox ID="TCodigoprovincia" runat="server"></asp:TextBox>
+    &nbsp;
+    <br />
+    CODIGO CANTON:
+    <asp:TextBox ID="TCodigocanton" runat="server"></asp:TextBox>
     <br />
     <br />
     <br />
     <asp:Button ID="BIngresarcanton" runat="server" OnClick="BIngresarcanton_Click" Text="INGRESAR" />
 &nbsp;&nbsp;&nbsp;
     <asp:Button ID="BBorrarcanton" runat="server" OnClick="BBorrarcanton_Click" Text="BORRAR" />
-&nbsp;&nbsp;&nbsp;
-    <asp:Button ID="BModificarcanton" runat="server" Text="MODIFICAR" />
 &nbsp;&nbsp;&nbsp;&nbsp;
     <asp:Button ID="BActualizarcanton" runat="server" OnClick="BActualizarcanton_Click" Text="ACTUALIZAR" />
     <br />
